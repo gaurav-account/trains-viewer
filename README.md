@@ -39,9 +39,10 @@ URL for Target Web Service and Authentication Header Info is configurable in bel
 
 ```
 config.properties
-![image](https://user-images.githubusercontent.com/48081601/131246520-210cb335-6f7d-4707-a81f-0945ce8f006a.png)
 
 ```
+![image](https://user-images.githubusercontent.com/48081601/131246534-04fac2f2-28a0-4b9c-9dad-43478a83325a.png)
+
 
 Install Requirement
 
