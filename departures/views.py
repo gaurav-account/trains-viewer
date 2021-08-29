@@ -32,4 +32,8 @@ def departures(request, station_code):
     except StationNotFoundError:
         raise Http404
     context = {'departures': departures, 'station_code': station_code}
+    # Uncomment below lines if we need json in response of API
+    #data = json.dumps(context)
+    # print(data)
+    #return HttpResponse(data, content_type='application/json')
     return render(request, 'departures/departures.html', context)
