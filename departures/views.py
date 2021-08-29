@@ -46,7 +46,7 @@ def departuresapi(request, station_code):
     try:
         departures = client.get_departures(station_code)
     except StationNotFoundError:
-        raise Http404
+        return HttpResponse('Station Not Found!!!', content_type='application/json',status=404)
     context = {'departures': departures, 'station_code': station_code}
     data = json.dumps(context)
     return HttpResponse(data, content_type='application/json')
