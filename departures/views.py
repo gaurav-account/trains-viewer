@@ -1,6 +1,5 @@
 from django.http import Http404
 from django.shortcuts import render
-
 from departures.api_client.client import OcpAPIClient
 from departures.api_client.client import StationNotFoundError
 from django.http import HttpResponse
@@ -10,20 +9,26 @@ import logging
 # Get an instance of a logger
 logger = logging.getLogger('django')
 
-#This is the method to load data for home page.
+#This is the method to load data for home page. It renders the output in HTML.
 #It fetches all station information.
 def index(request):
     logger.info('Got a call from UI to get all stations, fetching required data ..')
     client = OcpAPIClient()
     all_stations = client.get_all_stations()
     context = {'all_stations': all_stations}
-    #Uncomment below lines if we need json in response of API
-    #data = json.dumps(all_stations)
-    #print(data)
-    #return HttpResponse(data, content_type='application/json')
     return render(request, 'departures/index.html', context)
 
-#Method to fetch all the departures from the selected station.
+#API to load data for all stations. It returns the output in JSON format.
+def indexapi(request):
+    logger.info('Got a call from UI to get all stations, fetching required data ..')
+    client = OcpAPIClient()
+    all_stations = client.get_all_stations()
+    context = {'all_stations': all_stations}
+    data = json.dumps(all_stations)
+    return HttpResponse(data, content_type='application/json')
+
+
+#Method to fetch all the departures from the selected station. This renders the output in HTML format.
 def departures(request, station_code):
     logger.info('Got a call from UI to get all departures, fetching required data ..')
     client = OcpAPIClient()
@@ -32,8 +37,16 @@ def departures(request, station_code):
     except StationNotFoundError:
         raise Http404
     context = {'departures': departures, 'station_code': station_code}
-    # Uncomment below lines if we need json in response of API
-    #data = json.dumps(context)
-    # print(data)
-    #return HttpResponse(data, content_type='application/json')
     return render(request, 'departures/departures.html', context)
+
+#API to fetch all the departures from the selected station. This returns the output in JSON format.
+def departuresapi(request, station_code):
+    logger.info('Got a call from UI to get all departures, fetching required data ..')
+    client = OcpAPIClient()
+    try:
+        departures = client.get_departures(station_code)
+    except StationNotFoundError:
+        raise Http404
+    context = {'departures': departures, 'station_code': station_code}
+    data = json.dumps(context)
+    return HttpResponse(data, content_type='application/json')
