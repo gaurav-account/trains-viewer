@@ -75,9 +75,12 @@ py manage.py runserver
 
 2) Get All Departures
 
+#Valid Scenario
 ![image](https://user-images.githubusercontent.com/48081601/131247669-ab6fb84e-c5d6-47e3-8fa5-01598f23e16a.png)
 
-![image](https://user-images.githubusercontent.com/48081601/131255659-61cef55a-daab-4180-abd4-026ae9fd2a9c.png)
+#Invalid Scenario
+![image](https://user-images.githubusercontent.com/48081601/131255723-3deaacb1-9e89-41e5-8d91-7272e2995ae8.png)
+
 
 
 
@@ -89,12 +92,11 @@ py manage.py runserver
 
 2) Get All Departures
 
+#Valid Scenario
 ![image](https://user-images.githubusercontent.com/48081601/131247709-8c6d2171-0649-4279-abc5-8dac80f53151.png)
 
-![image](https://user-images.githubusercontent.com/48081601/131255627-55b91c16-2c34-4be0-8fe8-cdf48347dff3.png)
-
-![image](https://user-images.githubusercontent.com/48081601/131255667-51ada974-ad88-40df-a4c5-5d5912d4f581.png)
-
+#Invalid Scenario
+![image](https://user-images.githubusercontent.com/48081601/131255737-f34ea868-e356-4efc-b9ad-a080808b217a.png)
 
 
 ## Contributing
