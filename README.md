@@ -67,5 +67,9 @@ To get departure for any station, click on the hyperlink on station code
 http://localhost:8000/departures/<station_code>
 ```
 
+![image](https://user-images.githubusercontent.com/48081601/131246479-22acdd11-6d60-4c42-b919-4f51701855ac.png)
+
+
+
 ## Contributing
 Pull requests are welcome. 
