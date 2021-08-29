@@ -4,15 +4,16 @@ Train Departure Viewer has two parts:
 
 1) Get stations
 
-       Can be used to get list of stations along with repective station codes.             
-       URL : http://localhost:8000/departures/
+       Can be used to get list of stations along with repective station codes.
+       API URL : http://localhost:8000/departures/v1/api/
+       UI URL : http://localhost:8000/departures/
 
 
 2) Get departures
 
        Can be used to get all train departures from a given station.
-       URL : http://localhost:8000/departures/<Station_Code>
-       Example : http://localhost:8000/departures/GVC
+       API URL : http://localhost:8000/departures/v1/api/<Station_Code>
+       UI URL : http://localhost:8000/departures/<Station_Code>
 
 
 
