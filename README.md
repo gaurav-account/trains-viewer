@@ -77,6 +77,9 @@ py manage.py runserver
 
 ![image](https://user-images.githubusercontent.com/48081601/131247669-ab6fb84e-c5d6-47e3-8fa5-01598f23e16a.png)
 
+![image](https://user-images.githubusercontent.com/48081601/131255542-a96bce39-8e5f-44a5-b956-71a52a517aca.png)
+
+
 ## Testing Via Browser
 #HTML as OUTPUT
 1) Get All Stations
