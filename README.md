@@ -39,7 +39,10 @@ URL for Target Web Service and Authentication Header Info is configurable in bel
 
 ```
 config.properties
+
 ```
+![image](https://user-images.githubusercontent.com/48081601/131246534-04fac2f2-28a0-4b9c-9dad-43478a83325a.png)
+
 
 Install Requirement
 
@@ -66,6 +69,11 @@ http://localhost:8000/departures/
 To get departure for any station, click on the hyperlink on station code
 http://localhost:8000/departures/<station_code>
 ```
+## Test Coverage Report
+
+![image](https://user-images.githubusercontent.com/48081601/131246479-22acdd11-6d60-4c42-b919-4f51701855ac.png)
+
+
 
 ## Contributing
 Pull requests are welcome. 
