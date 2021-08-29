@@ -75,11 +75,11 @@ py manage.py runserver
 
 2) Get All Departures
 
-#Valid Scenario
+       a) Valid Scenario
 
 ![image](https://user-images.githubusercontent.com/48081601/131247669-ab6fb84e-c5d6-47e3-8fa5-01598f23e16a.png)
 
-#Invalid Scenario
+       b) Invalid Scenario
 
 ![image](https://user-images.githubusercontent.com/48081601/131255723-3deaacb1-9e89-41e5-8d91-7272e2995ae8.png)
 
@@ -94,11 +94,11 @@ py manage.py runserver
 
 2) Get All Departures
 
-#Valid Scenario
+       a) Valid Scenario
 
 ![image](https://user-images.githubusercontent.com/48081601/131247709-8c6d2171-0649-4279-abc5-8dac80f53151.png)
 
-#Invalid Scenario
+       b) Invalid Scenario
 
 ![image](https://user-images.githubusercontent.com/48081601/131255737-f34ea868-e356-4efc-b9ad-a080808b217a.png)
 
