@@ -82,6 +82,7 @@ py manage.py runserver
 1) Get All Stations
 
 ![image](https://user-images.githubusercontent.com/48081601/131247690-3a1353f0-8bdd-4092-bab3-6f755b804b01.png)
+
 2) Get All Departures
 
 ![image](https://user-images.githubusercontent.com/48081601/131247709-8c6d2171-0649-4279-abc5-8dac80f53151.png)
