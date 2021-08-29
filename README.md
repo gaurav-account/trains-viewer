@@ -77,16 +77,20 @@ http://localhost:8000/departures/<station_code>
 ## Testing Via Postman
 #JSON as OUTPUT
 1) Get All Stations
+
 ![image](https://user-images.githubusercontent.com/48081601/131247644-d878c17a-c21e-450b-ae3e-78366c5c8cc6.png)
 
 2) Get All Departures
+
 ![image](https://user-images.githubusercontent.com/48081601/131247669-ab6fb84e-c5d6-47e3-8fa5-01598f23e16a.png)
 
 ## Testing Via Browser
 #HTML as OUTPUT
 1) Get All Stations
+
 ![image](https://user-images.githubusercontent.com/48081601/131247690-3a1353f0-8bdd-4092-bab3-6f755b804b01.png)
 2) Get All Departures
+
 ![image](https://user-images.githubusercontent.com/48081601/131247709-8c6d2171-0649-4279-abc5-8dac80f53151.png)
 
 
