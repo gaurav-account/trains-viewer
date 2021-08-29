@@ -77,7 +77,8 @@ py manage.py runserver
 
 ![image](https://user-images.githubusercontent.com/48081601/131247669-ab6fb84e-c5d6-47e3-8fa5-01598f23e16a.png)
 
-![image](https://user-images.githubusercontent.com/48081601/131255609-7130f685-fdf9-4b2b-9d25-0f3456d2c94d.png)
+![image](https://user-images.githubusercontent.com/48081601/131255659-61cef55a-daab-4180-abd4-026ae9fd2a9c.png)
+
 
 
 ## Testing Via Browser
@@ -91,6 +92,8 @@ py manage.py runserver
 ![image](https://user-images.githubusercontent.com/48081601/131247709-8c6d2171-0649-4279-abc5-8dac80f53151.png)
 
 ![image](https://user-images.githubusercontent.com/48081601/131255627-55b91c16-2c34-4be0-8fe8-cdf48347dff3.png)
+
+![image](https://user-images.githubusercontent.com/48081601/131255667-51ada974-ad88-40df-a4c5-5d5912d4f581.png)
 
 
 
