@@ -23,7 +23,7 @@ def indexapi(request):
     logger.info('Got a call from UI to get all stations, fetching required data ..')
     client = OcpAPIClient()
     all_stations = client.get_all_stations()
-    context = {'all_stations': all_stations}
+    #context = {'all_stations': all_stations}
     data = json.dumps(all_stations)
     return HttpResponse(data, content_type='application/json')
 
