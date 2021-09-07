@@ -25,7 +25,13 @@ def indexapi(request):
     all_stations = client.get_all_stations()
     #context = {'all_stations': all_stations}
     data = json.dumps(all_stations)
-    return HttpResponse(data, content_type='application/json')
+    resp = HttpResponse(data, content_type='application/json')
+    resp["Access-Control-Allow-Origin"] = "http://localhost:4200"
+    resp["Access-Control-Allow-Headers"] = "*"
+    resp["Access-Control-Allow-Methods"] = "*"
+    resp["Access-Control-Allow-Credentials"] = "true"
+    return resp
+    #return HttpResponse(data, content_type='application/json')
 
 
 #Method to fetch all the departures from the selected station. This renders the output in HTML format.
@@ -49,4 +55,10 @@ def departuresapi(request, station_code):
         return HttpResponse('Station Not Found!!!', content_type='application/json',status=404)
     context = {'departures': departures, 'station_code': station_code}
     data = json.dumps(context)
-    return HttpResponse(data, content_type='application/json')
+    resp = HttpResponse(data, content_type='application/json')
+    resp["Access-Control-Allow-Origin"] = "http://localhost:4200"
+    resp["Access-Control-Allow-Headers"] = "*"
+    resp["Access-Control-Allow-Methods"] = "*"
+    resp["Access-Control-Allow-Credentials"] = "true"
+    return resp
+    #return HttpResponse(data, content_type='application/json')
